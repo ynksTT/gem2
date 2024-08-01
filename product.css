@@ -1,0 +1,351 @@
+html{
+  
+}
+
+.about_1_nav_a > a::after {
+  border-bottom: solid 2px aliceblue;
+  bottom: 0;
+  content: "";
+  display: block;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  width:0%;
+}
+.about_1_nav_a > a:hover::after {
+  width: 100%;
+}
+
+/*================
+ PC用のスタイル
+=================*/
+@media screen and (min-width: 768px) {
+   
+
+ 
+
+ 
+
+/* body */
+
+body{
+  /* background-image: url(images/ABOUT_PAGE/インテリアシーン001_PSD.jpg);
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover; */
+}
+
+#access_1{
+  display: flex;
+  width: auto;
+  background-image: url(images/product/DSCF9707.jpg);
+  color: aliceblue;
+  background-position: left 90% center;
+  background-size: cover; 
+  position: relative;
+}
+
+
+.about_1_left {
+  width: 20%;
+  height: 100vh;
+  text-align: center;
+}
+
+.about_1_title{
+  margin-bottom: 110px;
+  color: aliceblue;
+  font-size: 2rem;
+  margin-top: 20%;
+  font-family: "Gideon Roman", serif;
+ 
+}
+
+.about_1_nav_a {
+  margin-bottom: 30px;
+}
+
+.about_1_nav_a >a{
+  display: inline-block;
+  font-family: "Bona Nova", serif;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+
+.about_1_right{
+  /* width: 80%;
+  text-align: center;
+  align-self: center; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Bodoni Moda", serif;
+}
+
+.about_1_center_p1{
+  margin-left: 40%;
+  font-size: 1.2rem;
+  
+}
+
+.about_1_center_p2{
+  margin-left: 20%;
+  font-size: 1.0rem;
+  font-family: "Noto Serif JP", serif;
+}
+
+h1{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+  
+}
+
+.about1_img{
+  margin-top: 60px;
+    width: 30px;
+    height: 30px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+   padding-top: 30px;
+  padding-bottom: 30px; 
+  /* height: 20%; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.nav_top{
+  
+  width: 100%;
+  height: 125px;
+  
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+  
+}
+
+.nav_top2{
+  width: 85%;
+  display: flex;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0; /* 初期状態は非表示 */
+  /* 上から移動 */
+  transform: translateY(-100px);
+  transition: opacity 0.8s, transform 0.8s; /* フェードと移動のアニメーション時間 */
+}
+
+/* フェードインのクラス */
+.fade-in {
+  opacity: 1; /* 完全に表示 */
+  transform: translateY(0); /* 初期位置に移動 */
+}
+
+/* フェードアウトのクラス */
+.fade-out {
+  opacity: 0; /* 完全に透明に */
+  transform: translateY(-100px); /* 非表示位置に移動 */
+}
+
+.about2_p{
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0d0d0d;
+
+}
+
+/* ナビゲーションのレイアウト */
+#nav_pc {
+  margin-left: 30px;
+  font-size: 14px;
+  align-self: center;
+  
+}
+
+/* ナビゲーションのリンクの装飾設定 */
+#nav_pc >a{
+  margin-left: 30px;
+  text-decoration: none;
+  color: #0d0d0d;
+}
+.nav_pic{
+
+}
+.about2_img{
+    
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+#nav-pc>a:link {
+  color: #0d0d0d;
+}
+
+#nav-pc>a:visited {
+  color: #0d0d0d;
+}
+
+#nav-pc>a:hover {
+  color: #0d0d0d;
+  text-decoration: underline;
+}
+
+#nav-pc>a:active {
+  color: #0d0d0d;
+}
+
+/* access2 */
+
+#access2{
+  width: 100%;
+ 
+
+}
+
+.access2_main{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+
+.access2_main > p{
+  letter-spacing: 0.12em;
+  line-height: 1.7;
+}
+
+
+
+
+.tatesen{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tatesen_box1{
+  height: 50px;
+  position: relative;
+  width: 50%;
+}
+
+.tatesen_box1::after{
+  position: absolute; /*--positionを追加--*/
+	top: 0;
+	left: 100%;
+	content: "";
+	width: 1px; /*--縦線の太さ(幅)--*/
+	height: 100%;
+	background-color: gray; /*--縦線の色--*/
+}
+
+.tatesen_box2{
+  height: 50px;
+  width: 50%;
+}
+
+
+
+.access2_main2{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+
+.access2_main2_1{
+  width: calc(50% - 20px);
+  padding: 20px; 
+  
+}
+
+.access_main2_img{
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.access2_main2_nav{
+  text-align: right;
+  margin-top: 100px;
+  text-decoration: none;
+}
+
+.access2_main2_nav > a{
+  text-decoration: none;
+  color: #0d0d0d;
+  border-bottom: 1px solid gray;
+  padding-bottom: 15px;
+
+}
+
+.access2_main2_p{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 0.12em;
+  line-height: 1.7;
+}
+
+.access2_main2_h2{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+}
+
+.inst_icon{
+  margin-top: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+.product_footer{
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.product_footer_p{
+  text-align: center;
+}
+}
